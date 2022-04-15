@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 8th Edition
+      lab 6
+     
+
+      
+      Author: Fathima Nushkira
+      Date:   2022-03-13
+
+      Filename:   Nushkira_3000352915_lab6.html
+
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+   <title>Quiz</title>
+   <link href="form_style.css" rel="stylesheet" />
+   
+</head>
+
+<body>
+   <header>
+
+     <h1> Lecture 7 Lab: Web Form</h1>
+      
+   </header>
+   <section>
+      
+      
+      <p style="color: red;"><b>Fields with * are required</b></p>
+      
+      <form id="quiz" action="" method="post">
+         <fieldset id="personalInfo">
+            
+            <legend>Personal Information</legend>
+            
+            <div class="formRow">
+               <label for="name">Full Name*:</label>
+               <input name="custName" id="name" type="text" placeholder="first and last name" required />
+            </div>
+
+            <div class="formRow"> 
+               <label for="mail">Email Address*:</label>
+               <input name="custEmail" id="mail" type="email" placeholder="someone@somewhere.com" required />
+            </div>
+            <div class="formRow"> 
+               <label for="age">Current Study:</label>
+               <input name="stu" id="study" type="text" value="Douglas college">
+                    
+            </div>
+
+             <div class="formRow"> 
+               <label for="age">Age:</label>
+               <input name="stuAge" id="age" type="number" value="20">
+                    
+            </div>
+            
+
+                     
+         </fieldset>
+         
+         <fieldset id="yourQuiz">
+            <legend>Your Quiz</legend>
+            
+            <div class="formRow1"> 
+               <p>1. What is the result of the following equation?</p>
+               <label for="age">2<sup>2</sup>x5=</label>
+               <input name="answer" id="answer"  placeholder="">
+            </div>
+            
+
+
+            <div class="formRow1">
+               <label for="info">2. What does the acronym W3C stands for?</label>
+               <select name="answerType" id="answer">
+                  <option value="answer1">3rd World war coallision</option>
+                  <option value="answer2">World Wide Web Consortium</option>
+                  <option value="answer3" selected>World Wide WarCraft</option>
+                  <option value="answer4">World's Third Consortium</option>
+               </select>
+            </div> 
+            
+            <div class="formRow1"> 
+               <p>3.CSS is an abbreviation of <input name="answer" id="answer"  placeholder=""> style sheet</p>
+            </div>
+
+             <div class="formRow1">
+               <label>4.Select all the (scripting) languages we learn in CSIS 1280?</label><br>
+              
+                  <label for="html">HTML</label>
+                  <input name="answer" id="ans1" value="html" type="checkbox" />
+                  <label for="css">CSS</label>
+                  <input name="answer" id="ans2" value="css" type="checkbox" />
+                  <label for="jvscrpt">JavaScript</label>
+                  <input name="answer" id="ans3" value="jvsript" type="checkbox" />
+                  <label for="php">PHP</label>
+                  <input name="answer" id="ans4" value="php" type="checkbox" />
+                  <label for="c">C#</label>
+                  <input name="answer" id="ans5" value="c#" type="checkbox" />
+                  <label for="jv">JAVA</label>
+                  <input name="answer" id="ans6" value="java" type="checkbox" />
+            </div>
+            
+            <div class="formRow1">
+               <label>5.Consider the picture of a DOM structure below. 
+                  Which of the following selector <b>CANNOT</b> be used to select all the < p > elements ?</label><br>
+              
+                 
+                  <input name="answer" id="ans1" value="p" type="radio" />
+                  <label for="p">p</label><br>
+                  <input name="answer" id="ans2" value="hl~p" type="radio" />
+                  <label for="hl~p">hl ~ p</label><br>
+                  <input name="answer" id="ans3" value="article" type="radio" />
+                  <label for="art">article p</label><br>
+                  <input name="answer" id="ans4" value="articlep" type="radio" />
+                  <label for="arti">article > p</label><br>
+                  <input name="answer" id="ans5" value="h1" type="radio" />
+                  <label for="h">h1 + p</label><br>
+                  
+                  <img src="images/q5.PNG" class="" alt="" />
+            </div>
+
+            <div class="formRow1">
+               <label>6.Consider the picture of a DOM structure below. 
+                  Which of the following selector <b>CAN</b> be used to select all the identifier < li > elements ?</label><br>
+              
+                 
+                  <input name="answer" id="ans1" value="li" type="radio" />
+                  <label for="li">li</label><br>
+                  <input name="answer" id="ans2" value="linth2" type="radio" />
+                  <label for="linth">li:nth-child(2n+1)</label><br>
+                  <input name="answer" id="ans3" value="2n1" type="radio" />
+                  <label for="2n1">ul > li:(2n+1)</label><br>
+                  <input name="answer" id="ans4" value="uli" type="radio" />
+                  <label for="uli">ul > li</label><br>
+                  <input name="answer" id="ans5" value="u2" type="radio" />
+                  <label for="u2">ul > li(2n+1)</label><br>
+                  
+                  <img src="images/q6.PNG" class="" alt="" />
+            </div>
+           
+            <div class="formRow1"> 
+               <p>7. Douglas college and the Coquitlam campus was named after the <br>
+                  former governor and Liutenant-Governor of British Columbia. What are<br>
+                  their names?</p>
+              
+               <input name="answer7" id="answer7"  placeholder="">
+            </div>
+            
+            
+           
+            
+           
+            
+            
+            
+         </fieldset>
+
+         <div id="buttons">
+            <input type="submit" value="Submit My quiz" />
+            <input type="reset" value="Cancel" />
+         </div>         
+      </form>
+
+     
+   </section>
+   <footer>
+      
+   </footer>
+</body>
+</html>
